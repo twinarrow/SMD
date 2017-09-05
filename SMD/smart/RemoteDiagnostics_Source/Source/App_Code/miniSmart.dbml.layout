@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12.25, 12" name="miniSmart">
+  <DataContextMoniker Name="/miniSmartDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8fd94c8e-9b88-46d3-abc6-4ed8eb7de760" absoluteBounds="4.125, 2.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/miniSmartDataContext/tab_CA_EMS_FREEZEFRAME_DATA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6abd8e9-0b09-4b80-8710-c6a13bfe9dfa" absoluteBounds="4.14, 3.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d5b17dba-6bb8-4013-bf20-630ad062bfd3" absoluteBounds="10, 5.5, 2, 6.1938297526041657">
+      <DataClassMoniker Name="/miniSmartDataContext/tab_m_VCI_REGISTERATION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="378c48f9-6c75-4108-8cef-b30333ba3966" absoluteBounds="10.015, 5.96, 1.9700000000000002, 5.6338297526041661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e4ce7ad4-0714-44c6-b7bb-e6c72b90413e" absoluteBounds="7.75, 5.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/miniSmartDataContext/tab_m_DEVICE_VIN_MAPPING" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10ee8635-d74e-4c0a-bd2d-4b0de6aee6cd" absoluteBounds="7.765, 5.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a0ab2292-d7e5-4bb8-8fa3-e7f7f3e4ac05" absoluteBounds="4.375, 5.25, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/miniSmartDataContext/tab_CA_EMS_DTC_INFO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="76ec2b6b-34f2-4049-b7d4-3f42c5346f4c" absoluteBounds="4.39, 5.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29d35fbf-52af-4144-8843-9a59c26df2d5" absoluteBounds="2, 3.625, 2, 4.8477197265625">
+      <DataClassMoniker Name="/miniSmartDataContext/tab_CA_EMS_MASTER_INFO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="501e8ff1-9191-4f4e-b460-63f250724941" absoluteBounds="2.015, 4.085, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b840ea08-c44e-40c3-b12c-de163b582972" absoluteBounds="7.75, 1.25, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/miniSmartDataContext/tab_CA_CRITICAL_DTC_ADD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c47a0415-e1f0-4349-8740-ece27a0ca23b" absoluteBounds="7.7650000000000006, 1.71, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="468dd94c-006d-43bd-a7bb-c23997241367" absoluteBounds="4.25, 0.625, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/miniSmartDataContext/tab_CA_EMS_DTC_LOGIC_ADD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="69e19e02-9b4d-4de6-a69b-dff339d42705" absoluteBounds="4.2650000000000006, 1.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f94aad7b-7d09-4eb1-8ec1-0435ba7882cd" absoluteBounds="2, 0.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/miniSmartDataContext/tab_m_ADMIN_USER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="24473345-98d8-4337-80cf-6f62b0c4923f" absoluteBounds="2.0149999999999997, 0.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9ea4b31f-5a96-4cfa-92e5-d23dea80d2c5" absoluteBounds="10, 0.875, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/miniSmartDataContext/tab_CA_EMS_DTC_LOGIC_BUILD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="02cd67e3-ea1a-4fd9-8941-288e9b7d7005" absoluteBounds="10.015, 1.335, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

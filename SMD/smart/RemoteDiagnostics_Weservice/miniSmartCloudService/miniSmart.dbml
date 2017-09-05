@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="minismart" Class="miniSmartDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=mminismartadmin.database.windows.net;Initial Catalog=minismart;Persist Security Info=True;User ID=admin123" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="minismartConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tab_CA_EMS_FREEZEFRAME_DATA" Member="tab_CA_EMS_FREEZEFRAME_DATAs">
+    <Type Name="tab_CA_EMS_FREEZEFRAME_DATA">
+      <Column Name="freeze_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="master_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="dtc_INFO_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="freeze_SIGNAL" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="freeze_VALUE" Type="System.String" DbType="NVarChar(75) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tab_m_VCI_REGISTERATION" Member="tab_m_VCI_REGISTERATIONs">
+    <Type Name="tab_m_VCI_REGISTERATION">
+      <Column Name="register_ID_PK" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="register_MOBILE_DEVICE_ID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="register_VCI_ID" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="register_ID" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="register_COTEK_ID" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="register_FIRST_NAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="register_LAST_NAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="register_IS_ACTIVE" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="register_USER_TYPE" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="register_SKILL_ID" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="register_SKILL_NAME" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="register_USER_TYPE_DESC" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="register_PASSWORD_CHANGED" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="register_AREA_NAME" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="register_ZONE" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="register_CODE" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="register_LOCATION_NAME" Type="System.String" DbType="NVarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="register_CHANNEL_NO" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="register_IS_LDAP__AUTHENDICATED" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="register_LM_COMPANY_NAME" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="register_LM_LOCATION" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="register_LM_OWNER_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="register_LM_MOBILE_NO" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="register_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="register_DEALER_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="register_APP_VERSION" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="register_SERIAL_NUMBER" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="register_DEVICE_TOKEN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tab_m_DEVICE_VIN_MAPPING" Member="tab_m_DEVICE_VIN_MAPPINGs">
+    <Type Name="tab_m_DEVICE_VIN_MAPPING">
+      <Column Name="mapping_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VIN_NUMBER" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="device_TOKEN" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tab_CA_EMS_DTC_INFO" Member="tab_CA_EMS_DTC_INFOs">
+    <Type Name="tab_CA_EMS_DTC_INFO">
+      <Column Name="dtc_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="freeze_MASTER_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="freeze_DTC_CODE" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="freeze_DTC_DESCRIPTION" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="freeze_DTC_STATUS" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tab_CA_EMS_MASTER_INFO" Member="tab_CA_EMS_MASTER_INFOs">
+    <Type Name="tab_CA_EMS_MASTER_INFO">
+      <Column Name="freeze_MASTER_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="freeze_VIN_NUMBER" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="freeze_MOBILE_NUMBER" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="freeze_LATITUDE" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="freeze_LONGITUDE" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="freeze_TIMESTAMP" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="freeze_UPDATEDON" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="freeze_ECUNAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="freeze_VEHICLENAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="freeze_LOGINID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="freeze_LOGINNAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="freeze_MOBILE_MAC_ADDRESS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="freeze_VCIID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="freeze_APP_VERSION" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="freeze_DEALER_NAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="freeze_AREA" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="freeze_LOCATION" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="freeze_SOURCE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="freeze_ODOValue" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="freeze_PUSH_NOTIFY" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="freeze_NOTIFY_COUNTER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tab_CA_CRITICAL_DTC_ADD" Member="tab_CA_CRITICAL_DTC_ADDs">
+    <Type Name="tab_CA_CRITICAL_DTC_ADD">
+      <Column Name="crt_DTC_PK" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="crt_DTC_CODE" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="crt_DTC_STATUS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="crt_DTC_THRESHOLD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="crt_DTC_TYPE" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="crt_ECU_NAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="crt_PLATFORM_NAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="crt_TYPE_OF_OPERATION" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="crt_INVERT_OPERATON" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="crt_TYPE_OF_LOGIC" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="crt_ISCRITICAL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="crt_DTC_CREATED_ON" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="crt_DTC_INACTIVE_ON" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tab_CA_EMS_DTC_LOGIC_ADD" Member="tab_CA_EMS_DTC_LOGIC_ADDs">
+    <Type Name="tab_CA_EMS_DTC_LOGIC_ADD">
+      <Column Name="dtc_LOGIC_ADD_PK" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="dtc_DTC_CODE" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="dtc_LOGIC" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="dtc_LOGIC_THRESHOLD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="dtc_LOGIC_RESULT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tab_CA_EMS_DTC_LOGIC_BUILD" Member="tab_CA_EMS_DTC_LOGIC_BUILDs">
+    <Type Name="tab_CA_EMS_DTC_LOGIC_BUILD">
+      <Column Name="dtc_LOGIC_BUILD_PK" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="dtc_DTC_CODE_A" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="dtc_DTC_CODE_A_INVERT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="dtc_DTC_CODE_B" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dtc_DTC_CODE_B_INVERT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="dtc_DTC_CODE_C" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dtc_DTC_CODE_C_INVERT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="dtc_DTC_CODE_D" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dtc_DTC_CODE_D_INVERT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="dtc_LOGIC_OPERATION" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="dtc_LOGIC_CONCLUSION" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="dtc_LOGIC_STATUS" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="dtc_LOGIC_SMILEY" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tab_m_ADMIN_USER" Member="tab_m_ADMIN_USERs">
+    <Type Name="tab_m_ADMIN_USER">
+      <Column Name="user_ID_PK" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_FIRST_NAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="user_LAST_NAME" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="user_GENDER" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="user_ROLE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="user_EMAIL_ID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="user_CONTACT_NO" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="user_ACCESS_CODE" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="user_PASSWORD" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="user_ACTIVE_STATUS" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tab_m_VIN_SCORE" Member="tab_m_VIN_SCOREs">
+    <Type Name="tab_m_VIN_SCORE">
+      <Column Name="Leader_ID_PK" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Leader_Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Leader_VIN_NUMBER" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="Leader_TIMESTAMP" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Leader_SCORE" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
